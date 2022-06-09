@@ -1,0 +1,12 @@
+//
+//  Config.xcconfig
+//  MarvelHeros
+//
+//  Created by Khyati Dhawan on 08/06/22.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+
+API_KEY = 68ab854f91c3007c5afaef837d73e545
+PRIVATE_KEY = 9471cdbad93e19a6588d0d91afcaf284193e2175
