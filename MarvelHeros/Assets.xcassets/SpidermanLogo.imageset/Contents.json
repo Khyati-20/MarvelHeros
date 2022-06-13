@@ -1,17 +1,17 @@
 {
   "images" : [
     {
-      "filename" : "marvel.svg",
+      "filename" : "spiderman.svg",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
-      "filename" : "marvel-1.svg",
+      "filename" : "spiderman-1.svg",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
-      "filename" : "marvel-2.svg",
+      "filename" : "spiderman-2.svg",
       "idiom" : "universal",
       "scale" : "3x"
     }

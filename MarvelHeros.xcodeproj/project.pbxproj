@@ -7,10 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		172972562851FCB80070B48A /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 172972552851FCB80070B48A /* SnapKit */; };
+		17297283285208ED0070B48A /* HeroListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17297282285208ED0070B48A /* HeroListController.swift */; };
+		174D5AD22857DDD700F67B02 /* HeroDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 174D5AD12857DDD700F67B02 /* HeroDetailController.swift */; };
 		179B2192284F31EF0031C5D9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 179B2191284F31EF0031C5D9 /* AppDelegate.swift */; };
 		179B2194284F31EF0031C5D9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 179B2193284F31EF0031C5D9 /* SceneDelegate.swift */; };
 		179B2196284F31EF0031C5D9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 179B2195284F31EF0031C5D9 /* ViewController.swift */; };
-		179B2199284F31EF0031C5D9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 179B2197284F31EF0031C5D9 /* Main.storyboard */; };
 		179B219B284F31F00031C5D9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 179B219A284F31F00031C5D9 /* Assets.xcassets */; };
 		179B219E284F31F00031C5D9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 179B219C284F31F00031C5D9 /* LaunchScreen.storyboard */; };
 		179B21A9284F31F00031C5D9 /* MarvelHerosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 179B21A8284F31F00031C5D9 /* MarvelHerosTests.swift */; };
@@ -42,11 +44,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		17297282285208ED0070B48A /* HeroListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroListController.swift; sourceTree = "<group>"; };
+		174D5AD12857DDD700F67B02 /* HeroDetailController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroDetailController.swift; sourceTree = "<group>"; };
 		179B218E284F31EF0031C5D9 /* MarvelHeros.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MarvelHeros.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		179B2191284F31EF0031C5D9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		179B2193284F31EF0031C5D9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		179B2195284F31EF0031C5D9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		179B2198284F31EF0031C5D9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		179B219A284F31F00031C5D9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		179B219D284F31F00031C5D9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		179B219F284F31F00031C5D9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -69,6 +72,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				179B21C32850AE8F0031C5D9 /* Alamofire in Frameworks */,
+				172972562851FCB80070B48A /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -115,10 +119,11 @@
 				179B2191284F31EF0031C5D9 /* AppDelegate.swift */,
 				179B2193284F31EF0031C5D9 /* SceneDelegate.swift */,
 				179B2195284F31EF0031C5D9 /* ViewController.swift */,
+				17297282285208ED0070B48A /* HeroListController.swift */,
+				174D5AD12857DDD700F67B02 /* HeroDetailController.swift */,
 				179B21D52851403C0031C5D9 /* Model */,
 				179B21CF2850E8920031C5D9 /* Helper */,
 				179B21C92850CC710031C5D9 /* Config.xcconfig */,
-				179B2197284F31EF0031C5D9 /* Main.storyboard */,
 				179B219A284F31F00031C5D9 /* Assets.xcassets */,
 				179B219C284F31F00031C5D9 /* LaunchScreen.storyboard */,
 				179B219F284F31F00031C5D9 /* Info.plist */,
@@ -181,6 +186,7 @@
 			name = MarvelHeros;
 			packageProductDependencies = (
 				179B21C22850AE8F0031C5D9 /* Alamofire */,
+				172972552851FCB80070B48A /* SnapKit */,
 			);
 			productName = MarvelHeros;
 			productReference = 179B218E284F31EF0031C5D9 /* MarvelHeros.app */;
@@ -256,6 +262,7 @@
 			mainGroup = 179B2185284F31EF0031C5D9;
 			packageReferences = (
 				179B21C12850AE8F0031C5D9 /* XCRemoteSwiftPackageReference "Alamofire" */,
+				172972542851FCB80070B48A /* XCRemoteSwiftPackageReference "SnapKit" */,
 			);
 			productRefGroup = 179B218F284F31EF0031C5D9 /* Products */;
 			projectDirPath = "";
@@ -275,7 +282,6 @@
 			files = (
 				179B219E284F31F00031C5D9 /* LaunchScreen.storyboard in Resources */,
 				179B219B284F31F00031C5D9 /* Assets.xcassets in Resources */,
-				179B2199284F31EF0031C5D9 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -311,7 +317,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nif which swiftlint >/dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n#if which swiftlint >/dev/null; then\n # swiftlint\n#else\n # echo \"warning: SwiftLint not installed, download from #https://github.com/realm/SwiftLint\"\n#fi\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -326,7 +332,9 @@
 				179B21C52850BE1B0031C5D9 /* Network.swift in Sources */,
 				179B21CB2850D4280031C5D9 /* Extenstions.swift in Sources */,
 				179B21D428513FFA0031C5D9 /* CharacterDataWrapper.swift in Sources */,
+				174D5AD22857DDD700F67B02 /* HeroDetailController.swift in Sources */,
 				179B2194284F31EF0031C5D9 /* SceneDelegate.swift in Sources */,
+				17297283285208ED0070B48A /* HeroListController.swift in Sources */,
 				179B21D7285145B70031C5D9 /* CustomDecoder.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -364,14 +372,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		179B2197284F31EF0031C5D9 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				179B2198284F31EF0031C5D9 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		179B219C284F31F00031C5D9 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -513,7 +513,6 @@
 				INFOPLIST_FILE = MarvelHeros/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -541,7 +540,6 @@
 				INFOPLIST_FILE = MarvelHeros/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -675,6 +673,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		172972542851FCB80070B48A /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
 		179B21C12850AE8F0031C5D9 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
@@ -686,6 +692,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		172972552851FCB80070B48A /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 172972542851FCB80070B48A /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
 		179B21C22850AE8F0031C5D9 /* Alamofire */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 179B21C12850AE8F0031C5D9 /* XCRemoteSwiftPackageReference "Alamofire" */;
