@@ -37,6 +37,15 @@ struct Character: Codable {
     let stories: StoryList
     let events: EventList
     let series: SeriesList
+    
+    func getDescription() -> String {
+        if description == "" {
+            return "Sorry, \(name) doesn't like to open up! :("
+        }
+        return description
+    }
+    
+    
 }
 
 struct Url: Codable {
@@ -47,6 +56,9 @@ struct Url: Codable {
 struct Image: Codable {
     let path: String
     let `extension`: String
+    func fullPath() -> String {
+        return "\(path).\(`extension`)"
+    }
 }
 struct ComicList: Codable {
     let available: Int

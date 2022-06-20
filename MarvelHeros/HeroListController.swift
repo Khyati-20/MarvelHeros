@@ -9,6 +9,9 @@ import Foundation
 import UIKit
 import SwiftUI
 
+
+
+
 class HeroListController: UIViewController {
     
    lazy var tableView = UITableView()
@@ -25,9 +28,7 @@ class HeroListController: UIViewController {
         fetchCharacterData()
         
     }
-    
-    
-    
+
     func setupView()  {
        
         view.addSubview(tableView)
@@ -56,9 +57,6 @@ class HeroListController: UIViewController {
 }
 extension HeroListController : UITableViewDataSource, UITableViewDelegate {
 
-   
-  
-
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return charachterArray.count
     }
@@ -66,17 +64,14 @@ extension HeroListController : UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
         cell.textLabel?.text = charachterArray[indexPath.row].name
-        
+        cell.imageView?.loadFromURL(url: charachterArray[indexPath.row].thumbnail.fullPath())
         return cell
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
-        print(indexPath.row)
-        print("from select rowAt")
         name = charachterArray[indexPath.row].name
-        print(name)
-        self.navigationController?.pushViewController(HeroDetailController(), animated: false)
+        self.navigationController?.pushViewController(HeroDetailController(data: charachterArray[indexPath.row]), animated: false)
     }
         
 }
